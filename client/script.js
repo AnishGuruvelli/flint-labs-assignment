@@ -66,13 +66,13 @@ document.addEventListener("DOMContentLoaded", function () {
         const balanceData = await fetchBalanceData(walletAddress);
 
         if (balanceData) {
-            balanceValueElement.textContent = balanceData.balance.toFixed(10); // Adjust precision as needed
+            balanceValueElement.textContent = balanceData.balance.toFixed(10);
             changePercentageElement.textContent =
                 balanceData.changePercentage.toFixed(2) + "%";
             timestampElement.textContent = new Date(
                 balanceData.timestamp
             ).toLocaleString();
-            walletAddressDisplayElement.textContent = walletAddress; // Display wallet address
+            walletAddressDisplayElement.textContent = walletAddress;
             balanceSection.style.display = "block"; // Show the balance section
 
             // Display alert if percentage change is more than 10%
@@ -101,7 +101,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     refreshButton.addEventListener("click", handleRefreshClick);
 
-    // Initial data fetch on page load (optional)
-    // You can choose to remove this if you want to fetch data only when the user clicks refresh
+    // remove this if you want to fetch data only when the user clicks refresh
     // updateBalanceInfo();
 });
