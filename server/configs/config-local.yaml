@@ -1,0 +1,10 @@
+env: local
+infura:
+  host: mainnet.infura.io
+  auth:
+    api:
+      key: 3e581c1579624c01861c8400629bef66
+etherscan:
+  host: api.etherscan.io
+  api:
+    key: 657E3BMJN28X4X6KGPZV3XMFDM2WJ31461

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>Token Balance App</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>FLINT LABS ASSIGNMENT</h1>
+
+    <div class="input-container">
+      <label for="walletAddress">Wallet Address:</label>
+      <input type="text" id="walletAddress" placeholder="Enter wallet address" />
+    </div>
+    <button class="submit" id="refreshButton">Submit</button>
+
+    <!-- HTML structure for displaying balance -->
+    <div class="balance-section" id="balanceSection">
+      <h2>Token Balance Information</h2>
+      <div class="balance-info">
+        <p class="label">Native Token Balance:</p>
+        <p id="balanceValue" class="value">Loading...</p>
+      </div>
+      <div class="balance-info">
+        <p class="label">Wallet Address:</p>
+        <p id="walletAddressDisplay" class="value">Loading...</p>
+      </div>
+      <div class="balance-info">
+        <p class="label">Percentage Change In The Last 12 Hours:</p>
+        <p id="changePercentage" class="value">Loading...</p>
+      </div>
+      <div class="balance-info">
+        <p class="label">Timestamp:</p>
+        <p id="timestamp" class="value">Loading...</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Include the necessary scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

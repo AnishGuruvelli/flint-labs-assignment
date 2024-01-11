@@ -1,0 +1,122 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #000000;
+}
+
+.container {
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  align-items: center;
+}
+
+h1,
+h2 {
+  color: purple;
+  padding: 5%;
+  text-align: center;
+}
+
+.input-section {
+  margin-bottom: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+label {
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+
+.submit {
+  margin: 0 auto;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid purple;
+  border-radius: 8px;
+  outline: none;
+  color: purple;
+  background-color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+button {
+  background-color: purple;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(92, 0, 92);
+}
+
+.balance-section {
+  display: none;
+}
+
+.balance-info {
+  margin-bottom: 15px;
+}
+
+.label {
+  font-weight: bold;
+  color: #555;
+}
+
+.value {
+  color: purple; 
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+
+  .input-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input[type="text"] {
+    margin-bottom: 10px;
+  }
+}
