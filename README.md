@@ -81,4 +81,12 @@ The project is structured into frontend and backend components.
 2. Click the "Submit" button to fetch and display the token balance information.
 3. Toggle dark mode for a different visual experience.
 
+## **Resources**
+
+1. https://piyopiyo.medium.com/how-to-get-ethereum-balance-with-json-rpc-api-provided-by-infura-io-6e5d22d25927
+
+2. https://app.infura.io/key/3e581c1579624c01861c8400629bef66/active-endpoints
+
+3. https://etherscan.io/myapikey
+
 ---
